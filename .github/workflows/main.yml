@@ -1,0 +1,17 @@
+name: Deploy Branch 
+
+on:  
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  deploy:
+    runs-on: Ubuntu-latest
+    defaults:
+      run: 
+        working-directory: ./
+    steps:
+      - run: git checkout -b deploy
+      - run: git merge origin master
+      - run: git rm -r node_modules
