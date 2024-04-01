@@ -1,0 +1,54 @@
+html {
+    scroll-behavior: smooth;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+// Containers and wrappers
+.container {
+    max-width: 1240px;
+    margin: auto;
+}
+
+// Text alignment
+.t-align-center {
+    text-align: center;
+}
+
+// Text colors
+.color-green {
+    color: #73D645;
+}
+
+.color-blue {
+    color: #3367d6;
+}
+
+// Background colors
+.bg-blue {
+    background-color: #3367D6;
+}
+.bg-dark-blue {
+    background-color: #1c4eb8;
+}
+
+.bg-gold {
+    background-color: #F6E6B2;
+}
+
+// Margins
+.mt-40 {
+    margin-top: 40px;
+}
+.mb-56 {
+    margin-bottom: 56px;
+}
+
+@media(min-width: 1440px) {
+    .l-vw-container {
+        max-width: 1240px !important;
+        margin: auto;
+    }
+}
