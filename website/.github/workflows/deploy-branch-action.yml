@@ -10,7 +10,7 @@ jobs:
     runs-on: Ubuntu-latest
     defaults:
       run: 
-        working-directory: ./
+        working-directory: ./website
     steps:
       - run: git checkout -b deploy
       - run: git merge origin master
