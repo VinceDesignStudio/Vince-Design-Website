@@ -1,11 +1,18 @@
+header {
+    background-color: #212629;
+    padding-bottom: 80px;
+}
+.logo-wrapper h2 {
+    color: #ffffff;
+}
 .navigation {
     width: 100%;
     max-width: 100%;
-    background-color: #ffffff;
+    // background-color: #ffffff;
 }
 
 .navigation-scroll {
-    background-color: #282828 !important;
+    background-color: #3367d6 !important;
     position: fixed !important;
     color: #ffffff !important;
 }
@@ -18,7 +25,8 @@
 }
 
 .navigation-menu-container {
-    padding: 16px 0;
+    // padding: 16px 0;
+    padding: 8px 0;
 }
 
 .navigation-menu .right-menu {
@@ -37,7 +45,8 @@
 
     ul a {
         text-decoration: none;
-        color: #000000;
+        // color: #000000;
+        color: #ffffff;
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 500;
@@ -45,12 +54,13 @@
 }
 .right-menu .navigation-button {
     margin-left: 40px;
-    border: 1px #000 solid;
+    border: 1px #ffffff solid;
     padding: 17px 31px 12px 26px;
     cursor: pointer;
     background-color: transparent;
     line-height: 142.2%;
     font-size: 16px;
+    color: #ffffff;
 }
 
 .right-menu .navigation-button-scroll {
@@ -69,12 +79,13 @@
     max-width: 1154px;
     line-height: 142.2%;
     padding-bottom: 67px;
+    color: #ffffff;
 }
 
 /* Audience section */
 .audience-section {
     padding: 80px 0;
-    margin-top: 80px;
+    // margin-top: 80px;
 }
 .container .audience-section-title {
     line-height: 142.2%;
