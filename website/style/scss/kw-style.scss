@@ -10,7 +10,7 @@ header {
     width: 100%;
     max-width: 100%;
     // background-color: #ffffff;
-    z-index: 98394834;
+    z-index: 98394834343333432323;
     // transition: 0.4s;
 }
 
@@ -26,6 +26,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 32px;
+    z-index: 9242;
+    position: relative;
 }
 
 .navigation-menu-container {
@@ -36,7 +38,6 @@ header {
 .navigation-menu .right-menu {
     display: flex;
     align-items: center;
-    z-index: 38498;
 
     ul {
         display: flex;
@@ -93,6 +94,8 @@ header {
     padding-bottom: 67px;
     color: #ffffff;
     font-weight: 500;
+    position: relative;
+    z-index: 8321;
 }
 
 .hero-background-video {
@@ -103,10 +106,17 @@ header {
 }
 
 .hero-overlay {
-    background-color: #212629;
-    z-index: 8937928323;
+    // background-color: #212629;
+    background-color: #000000d4;
+    z-index: 893;
     width: 100%;
     height: 100%;
+    position: absolute;
+}
+
+.hero-arrow-down {
+    z-index: 9103;
+    position: relative;
 }
 
 /* Audience section */
