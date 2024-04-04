@@ -36,6 +36,10 @@
 </head>
 <body>
     <header>
+        <!-- <div class="hero-overlay"></div>
+        <video class="hero-background-video" id="hero-background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+        </video> -->
         <nav class="navigation">
             <div class="container navigation-menu">
                 <div class="left-menu">
@@ -46,11 +50,11 @@
                 </div>
                 <div class="right-menu">
                     <ul class="nav-menu">
-                        <li><a href="">SERVICES</a></li>
-                        <li><a href="">TESTIMONIALS</a></li>
-                        <li><a href="">DESIGN PROCESS</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#testimonials">TESTIMONIALS</a></li>
+                        <li><a href="#design-process">DESIGN PROCESS</a></li>
                     </ul>
-                    <button class="navigation-button">CONTACT US</button>
+                    <button class="navigation-button"><a href="#contact-us">CONTACT US</a></button>
                 </div>
             </div>
         </nav>
@@ -63,7 +67,7 @@
                     We are agile, collaborative & client-obsessed.
                 </h1>
                 <div class="hero-arrow-down">
-                    <img src="./assets/company/hero-arrow-down.png" alt="">
+                    <img src="./assets/icons/arrow-down.svg" alt="">
                 </div>
             </div>
         </section>
@@ -74,7 +78,7 @@
                     <img src="./assets/icons/scroll-to-top.svg" alt="">
                 </div>
             </aside>
-            <section class="audience-section bg-blue">
+            <section class="audience-section bg-blue" id="services">
                 <div class="container">
                     <h2 class="audience-section-title">
                         The Adience team has years of B2B market research experience, having delivered 
@@ -102,7 +106,7 @@
                 </div>
             </section>
 
-            <section class="testimonial-section bg-gold">
+            <section class="testimonial-section bg-gold" id="testimonials">
                 <div class="container">
                     <div class="arrow-left">
                         <img src="./assets/icons/arrow-left.svg" alt="">
@@ -161,7 +165,7 @@
                 </div>
             </section>
 
-            <section class="contact-section">
+            <section class="contact-section" id="contact-us">
                 <div class="contact-container l-vw-container">
                     <div class="">
                         <div class="">
@@ -212,6 +216,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="./script/index.js"></script>
     <script src="./script/animation.js"></script>
 </body>
