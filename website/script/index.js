@@ -1,42 +1,46 @@
 const arrow_right = document.querySelector(".arrow-right");
 const arrow_left = document.querySelector(".arrow-left");
 const testimonial_content = document.querySelectorAll(".testimonial-content");
+const testimonial_wrapper = document.querySelector('.testimonial-wrapper')
 const scroll_to_top = document.querySelector(".scroll-to-top")
 const navigation_menu = document.querySelector(".navigation")
 const navigation_menu_container = document.querySelector(".navigation-menu")
 const nav_menu = document.querySelector(".nav-menu")
 const navigation_button = document.querySelector(".navigation-button")
 
+const slider_status_number = document.querySelector('.slider-status-number');
 
-let state = {
+
+const state = {
     current: 0
 };
 
-let add = ()=>{
-
-    // testimonial_content[current++]
-    if(state.current > 3)
-    {
-        state.current = 0;
+const nextSlide = () => {
+    if (state.current >= testimonial_content.length - 1) {
+        console.log("button disabled");
+    } else {
+        state.current++;
+        updateTestimonial();
+        console.log(state.current);
     }
-    console.log(testimonial_content[state.current++])
+};
 
-    // console.log(state.current++)
+const prevSlide = () => {
+    if (state.current <= 0) {
+        console.log("button disabled");
+    } else {
+        state.current--;
+        updateTestimonial();
+        console.log(state.current);
+    }
+};
 
-    // console.log(testimonial_content[state.current++])
+const updateTestimonial = () => {
+    testimonial_wrapper.innerHTML = testimonial_content[state.current].innerHTML;
+};
 
-}
-
-// let subtract = ()=>{
-//     console.log(testimonial_content[state.current + 1])
-
-//     // testimonial_content[current++]
-//     if(state.current > 3)
-//     {
-//         state.current = 0;
-//     }
-// }
-arrow_right.addEventListener("click", add)
+arrow_right.addEventListener("click", nextSlide);
+arrow_left.addEventListener("click", prevSlide);
 
 
 
