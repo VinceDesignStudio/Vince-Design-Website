@@ -11,36 +11,36 @@ const navigation_button = document.querySelector(".navigation-button")
 const slider_status_number = document.querySelector('.slider-status-number');
 
 
-const state = {
+let state = {
     current: 0
 };
 
-const nextSlide = () => {
-    if (state.current >= testimonial_content.length - 1) {
-        console.log("button disabled");
-    } else {
-        state.current++;
-        updateTestimonial();
-        console.log(state.current);
+let nextslide = ()=>{
+
+    if(state.current >= testimonial_content.length - 1 )
+    {
+        console.log("button disabled")
     }
-};
-
-const prevSlide = () => {
-    if (state.current <= 0) {
-        console.log("button disabled");
-    } else {
-        state.current--;
-        updateTestimonial();
-        console.log(state.current);
+    else {
+        testimonial_wrapper.innerHTML = testimonial_content[state.current += 1].innerHTML
+        console.log(state.current)
     }
-};
+}
 
-const updateTestimonial = () => {
-    testimonial_wrapper.innerHTML = testimonial_content[state.current].innerHTML;
-};
+let prevslide = ()=>{
 
-arrow_right.addEventListener("click", nextSlide);
-arrow_left.addEventListener("click", prevSlide);
+    if(state.current <= 0 )
+    {
+        console.log("button disabled")
+    }
+    else {
+        testimonial_wrapper.innerHTML = testimonial_content[state.current -= 1].innerHTML
+        console.log(state.current)
+    }
+}
+
+arrow_right.addEventListener("click", nextslide)
+arrow_left.addEventListener("click", prevslide)
 
 
 
