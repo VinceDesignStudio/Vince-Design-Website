@@ -146,7 +146,7 @@ header {
 
 .audience-list-wrapper .audience-list-description {
     margin-top: 16px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 158.2%;
     color: #ffffff;
 }
@@ -214,6 +214,9 @@ header {
 
 .arrow-right, .arrow-left {
     display: flex;
+    img {
+        max-width: 80%;
+    }
 }
 
 .testimonial-content .slider-status {
