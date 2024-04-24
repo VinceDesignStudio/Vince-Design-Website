@@ -1,0 +1,22 @@
+<svg width="107" height="108" viewBox="0 0 107 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_80_5)">
+<path d="M101.563 50C101.563 77.0757 79.9327 99 53.2813 99C26.6299 99 5 77.0757 5 50C5 22.9243 26.6299 1 53.2813 1C79.9327 1 101.563 22.9243 101.563 50Z" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip0_80_5)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32.9876 52.0001L48.4434 39.0105L47.1211 37.4167L28.6406 53.0855L47.1211 68.6667L48.4455 67.0751L32.9855 54.0834L77.9219 54.0834V52.0001L32.9876 52.0001Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d_80_5" x="0" y="0" width="106.562" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_80_5"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_80_5" result="shape"/>
+</filter>
+<clipPath id="clip0_80_5">
+<rect width="49.2813" height="50" fill="white" transform="matrix(-1 0 0 -1 77.9219 77)"/>
+</clipPath>
+</defs>
+</svg>

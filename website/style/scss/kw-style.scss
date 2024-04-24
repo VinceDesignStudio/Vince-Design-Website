@@ -152,7 +152,7 @@ header {
 }
 
 .project-section {
-    background-color: #DFF8EB; //FDFDFF
+    background-color: #ffffff; //FDFDFF
     padding: 80px 0;
 }
 
@@ -193,10 +193,11 @@ header {
     margin: auto;
     font-size: 32px;
     line-height: 158.2%;
-    color: #0000FB;
+    color: #ffffff;
 }
 
 .testimonial-section {
+    background-color: #3367d6;
     scroll-margin-top: 110px !important;
 }
 
@@ -222,7 +223,7 @@ header {
 .testimonial-content .slider-status p {
     font-size: 22px;
     line-height: 158.2%;
-    color: #0000FB;
+    color: #ffffff;
 }
 
 .testimonial-content .slider-status p:nth-child(2) {
@@ -230,7 +231,7 @@ header {
 }
 
 .contact-section {
-    background-color: #282828;
+    background-color: #0D1421;
     padding: 80px 0;
 }
 
@@ -307,7 +308,7 @@ header {
 }
 
 .contact-with-white-bg .send-message-btn {
-    border: 2px #000000 solid;
+    border: 2px #0D1421 solid;
     border-radius: 7px;
     background-color: transparent !important;
     padding: 15px 37px;
@@ -317,8 +318,8 @@ header {
 }
 
 footer {
-    background-color: #282828;
-    border-top: 1px #474747 solid;
+    background-color: #0D1421;
+    border-top: 1px #273859 solid;
     padding: 40px 0;
 }
 
@@ -326,7 +327,7 @@ footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #282828;
+    background-color: #0D1421;
     color: #ffffff;
 }
 
