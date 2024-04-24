@@ -263,6 +263,10 @@ header {
     column-gap: 40px;
 }
 
+.contact-information a {
+    text-decoration: underline !important;
+}
+
 .contact-information-wrapper .our-address, .contact-information-wrapper .phone-number,
 .contact-information-wrapper .email-address {
     line-height: 158.2%;
@@ -334,6 +338,10 @@ footer .container {
     align-items: center;
     background-color: #0D1421;
     color: #ffffff;
+}
+footer .left-column .footer-logo {
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .scroll-to-top {
