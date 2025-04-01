@@ -1,0 +1,35 @@
+@use "fonts";
+@use "colors";
+
+body {
+    color: colors.$cornflower-blue;
+}
+
+.lg-container {
+    margin: auto;
+    width: 100%;
+    max-width: 1274px;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 1180px;
+}
+
+h1 {
+    line-height: fonts.$line-height-98px;
+    letter-spacing: fonts.$letter-spacing-2px-negative;
+    font-size: fonts.$font-size-89px;
+}
+
+h2 {
+    font-size: fonts.$font-size-67px;
+    letter-spacing: fonts.$letter-spacing-1px-negative;
+}
+
+p {
+    font-size: fonts.$font-size-24px;
+    line-height: fonts.$line-height-32px;
+    font-weight: 400;
+}

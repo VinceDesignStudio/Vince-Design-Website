@@ -1,0 +1,446 @@
+@use "fonts";
+@use "colors";
+
+.home-hero-section .container  {
+    padding-top: 160px;
+}
+
+.home-hero-section .container h1 {
+    font-family: fonts.$libre-baskerville;
+    color: colors.$white;
+    span {
+        font-style: italic;
+    }
+}
+
+.home-hero-section .container p {
+    font-family: fonts.$ibm-plex-sans;
+    color: colors.$white;
+    margin-top: 16px;
+}
+
+.home-hero-section .container a button {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 20px;
+    color: #4f3297;
+    font-weight: 500;
+    background-color: #ffffff;
+    padding: 24px 32px;
+    border-radius: 4px;
+    line-height: 8px;
+    border: 1px #4f46e5 solid;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.home-hero-section .container .hero-success-stories {
+    color: #ffffff;
+    margin-left: 20px;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.navigation-scroll-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #493193;
+    z-index: 9723672;
+    padding: 24px 0 !important;
+    animation: smoothScroll .5s forwards;
+}
+
+
+// What We Do Section
+.what-we-do-section {
+    background-color: colors.$white;
+    padding-top: 104px;
+    padding-bottom: 104px;
+}
+
+.what-we-do-section .container {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.what-we-do-section .container .left-container {
+    max-width: 513px;
+}
+
+
+.what-we-do-section .container .right-container {
+    max-width: 580px;
+}
+
+.what-we-do-section .container .left-container h2 {
+    font-family: fonts.$libre-baskerville;
+    font-size: fonts.$font-size-67px;
+    font-weight: 400;
+    line-height: fonts.$line-height-72px;
+    letter-spacing: fonts.$letter-spacing-1px-negative;
+    color: colors.$cornflower-blue;
+}
+
+.what-we-do-section .container .left-container p {
+    margin-top: 12px;
+    font-family: fonts.$ibm-plex-sans;
+    font-size: fonts.$font-size-20px;
+    line-height: fonts.$line-height-28px;
+    color: colors.$cornflower-blue;
+    line-height: fonts.$line-height-28px;
+    font-weight: 400;
+}
+
+.what-we-do-section .container .left-container ul {
+    margin-top: 40px;
+}
+
+.what-we-do-section .container .left-container ul li {
+    font-family: fonts.$libre-baskerville;
+    font-size: fonts.$font-size-50px;
+    line-height: fonts.$line-height-60px;
+    letter-spacing: fonts.$letter-spacing-1px-negative;
+    color: colors.$cornflower-blue;
+    font-weight: 400;
+}
+
+.what-we-do-section .container .left-container button {
+    font-family: fonts.$ibm-plex-sans;
+    font-size: fonts.$font-size-20px;
+    line-height: fonts.$line-height-28px;
+    color: colors.$white;
+    font-weight: 500;
+    background-color: colors.$royal-blue;
+    padding: 16px 24px;
+    border-radius: 4px;
+    line-height: fonts.$line-height-8px;
+    border: 1px colors.$royal-blue solid;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.what-we-do-section .container .right-container .stage-image {
+    margin-top: -118px;
+    margin-bottom: 20px;
+    margin-left: 140px;
+    
+}
+
+
+// Project section
+.projects-section .container {
+    padding: 104px 0;
+}
+
+.projects-section .container .section-title {
+    color: colors.$white;
+    font-weight: 400;
+    line-height: fonts.$line-height-72px;
+    letter-spacing: fonts.$letter-spacing-1px-negative;
+    font-family: fonts.$libre-baskerville;
+    font-size: fonts.$font-size-67px;
+}
+.projects-section .container .section-description {
+    color: colors.$white;
+    margin-top: 12px;
+    font-family: fonts.$ibm-plex-sans;
+    font-size: fonts.$font-size-20px;
+    line-height: fonts.$line-height-28px;
+    margin-top: 12px;
+}
+
+.projects-section .container .card-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-section .container .card-container .two-grid-card,
+.projects-section .container .card-container .three-grid-card {
+    display: flex;
+    column-gap: 20px;
+}
+
+.projects-section .container .card-container .three-grid-card {
+    margin-top: 40px;
+}
+
+.projects-section .container .card-container .card {
+   color: colors.$white;
+   position: relative;
+   cursor: pointer;
+   transition: 0.5s ease;
+
+   .card-detail {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .0705882353), #060606);
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+
+    .card-text-wrapped {
+        position: absolute;
+        padding: 180px 40px 40px;
+        bottom: 0;
+    }
+   }
+
+   h2 {
+    font-family: fonts.$libre-baskerville;
+    font-size: fonts.$font-size-40px;
+    line-height: fonts.$line-height-48px;
+    letter-spacing: fonts.$letter-spacing-1px-negative;
+   }
+
+   p {
+    margin-top: 11px;
+    font-family: fonts.$ibm-plex-sans;
+    font-size: fonts.$font-size-16px;
+    line-height: fonts.$line-height-24px;
+    letter-spacing: fonts.$letter-spacing-0px;
+   }
+   
+}
+
+.projects-section .container .card-container .card:hover .card-detail {
+    display: block;
+}
+
+.projects-section .container .see-all-projects-btn {
+    display: block;
+    font-size: fonts.$font-size-20px;
+    line-height: fonts.$line-height-28px;
+    letter-spacing: fonts.$letter-spacing-0px;
+    margin-top: 40px;
+    font-family: fonts.$ibm-plex-sans;
+    color: colors.$white;
+    background-color: colors.$royal-blue;
+    padding: 16px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+   }
+
+.projects-section .container .card-container .card img {
+    width: 100%;
+}
+
+.grid-column-span-2 {
+    grid-column: span 2;
+}
+
+
+// Blogs article section
+.blogs-article-section {
+    background-color: colors.$white;
+    padding: 104px;
+}
+
+.blogs-article-section .container .section-title {
+    font-size: fonts.$font-size-67px;
+    line-height: fonts.$line-height-72px;
+    letter-spacing: fonts.$letter-spacing-1px-negative;
+    font-family: fonts.$libre-baskerville;
+    color: colors.$cornflower-blue;
+}
+
+.blogs-article-section .container .section-description {
+    font-size: fonts.$font-size-20px;
+    line-height: fonts.$line-height-28px;
+    letter-spacing: fonts.$letter-spacing-0px;
+    margin-top: 12px;
+    font-family: fonts.$ibm-plex-sans;
+    color: colors.$cornflower-blue;
+}
+
+.blogs-article-section .blog-article-cards-wrapper .blog-article-card {
+
+}
+
+.blogs-article-section .blog-article-cards-wrapper {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 40px;
+}
+
+.blog-article-cards-wrapper .blog-article-card
+.blog-article-card-information .blog-article-date {
+    font-size: fonts.$font-size-12px;
+    line-height: fonts.$line-height-16px;
+    letter-spacing: fonts.$letter-spacing-0px;
+    margin-top: 24px;
+    font-family: fonts.$ibm-plex-sans;
+    color: colors.$cornflower-blue;
+}
+
+.blog-article-cards-wrapper .blog-article-card
+.blog-article-card-information .blog-article-title {
+    font-size: fonts.$font-size-38px;
+    line-height: fonts.$line-height-44px;
+    letter-spacing: fonts.$letter-spacing-1px-negative;
+    margin-top: 8px;
+    font-family: fonts.$libre-baskerville;
+    color: colors.$cornflower-blue;
+}
+
+.blog-article-cards-wrapper .blog-article-card
+.blog-article-card-information .blog-article-description {
+    font-size: fonts.$font-size-16px;
+    line-height: fonts.$line-height-24px;
+    letter-spacing: fonts.$letter-spacing-0px;
+    margin-top: 8px;
+    font-family: fonts.$ibm-plex-sans;
+    color: colors.$cornflower-blue;
+}
+
+.blogs-article-section .container .see-all-articles-btn {
+    display: block;
+    font-size: fonts.$font-size-20px;
+    line-height: fonts.$line-height-28px;
+    letter-spacing: fonts.$letter-spacing-0px;
+    margin-top: 40px;
+    font-family: fonts.$ibm-plex-sans;
+    color: colors.$white;
+    background-color: colors.$royal-blue;
+    padding: 16px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+
+
+.contact-section {
+    background-color: #493193;
+    color: #ffffff;
+}
+
+.contact-section .container {
+    padding: 104px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+
+.contact-section .container p {
+    font-family: fonts.$ibm-plex-sans;
+    margin-top: 16px;
+    font-size: fonts.$font-size-20px;
+    line-height: fonts.$line-height-28px;
+    letter-spacing: fonts.$letter-spacing-0px;
+}
+
+.contact-section .container .see-all-articles-btn {
+    display: block;
+    margin-top: 40px;
+    color: colors.$royal-blue;
+    background-color: colors.$white;
+    border: 1px colors.$white solid;
+    padding: 16px 20px;
+    border-radius: 4px;
+    width: fit-content;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+
+footer .footer-section .container {
+    color: colors.$white;
+    padding: 80px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: fonts.$ibm-plex-sans;
+}
+
+.footer-section .container .footer-about-company {
+    p {
+        margin-top: 8px;
+        font-size: fonts.$font-size-16px;
+        line-height: fonts.$line-height-24px;
+        letter-spacing: fonts.$letter-spacing-0px;
+        color: colors.$cloudy;
+    }
+}
+
+.footer-section .container .footer-menu-items {
+    display: flex;
+    align-items: baseline;
+    column-gap: 152px;
+    ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        li {
+            cursor: pointer;
+        }
+    }
+}
+
+.footer-section .container .footer-social-media .social-media {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    li {
+        cursor: pointer;
+        img {
+            border: 1px colors.$royal-blue solid;
+            padding: 12px;
+            border-radius: 100%;
+            background-color: colors.$royal-blue;
+        }
+    }
+}
+
+footer .footer-section-copyright {
+    margin-top: 48px;
+}
+
+footer .footer-section-copyright .container {
+    color: colors.$white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: fonts.$ibm-plex-sans;
+    padding: 0 0 80px;
+}
+
+footer .footer-section-copyright .container .privacy-and-terms,
+footer .footer-section-copyright .container .copyright-text {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    font-size: fonts.$font-size-14px;
+    line-height: fonts.$line-height-16px;
+    letter-spacing: fonts.$letter-spacing-0px;
+    color: colors.$white;
+}
+
+footer .footer-section-copyright .container .copyright-text {
+    color: colors.$cloudy;
+}
+
+
+
+// animations
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-60px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}

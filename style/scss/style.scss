@@ -1,0 +1,13 @@
+// Global styles
+@use "_css-reset";
+@use "global";
+
+// Home page styles
+@use "_navigation";
+@use "main";
+
+
+
+body {
+    background-color: black;
+}

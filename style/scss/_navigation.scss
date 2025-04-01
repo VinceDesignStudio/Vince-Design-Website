@@ -1,0 +1,34 @@
+@use "fonts";
+@use "colors";
+
+.home-header {
+    background-image: url(../../assets/images/header-background.png);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    font-family: fonts.$ibm-plex-sans;
+    background-size: cover;
+}
+
+.home-header  .navigation-section {
+    padding: 32px 0;
+}
+
+.home-header  .navigation-section nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-header  .navigation-section  .nav-menu-list {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.home-header  .navigation-section  .nav-menu-list li {
+    color: colors.$white;
+    font-size: fonts.$font-size-16px;
+    line-height: fonts.$line-height-24px;
+    font-weight: 500;
+}
