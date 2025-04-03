@@ -36,12 +36,16 @@ p {
 
 
 @media only screen and (max-width: 1280px) {
-    .container {
-        max-width: 1080px;
-    }
-}
 
-@media only screen and (max-width: 1280px) {
+    .container {
+        // max-width: 1080px;
+        max-width: calc(100% - 200px);
+    }
+
+    .lg-container {
+        // max-width: 1080px;
+        max-width: calc(100% - 150px) !important;
+    }
 
     h1 {
         line-height: 88px;

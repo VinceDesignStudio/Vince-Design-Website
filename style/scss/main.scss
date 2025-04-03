@@ -455,4 +455,41 @@ footer .footer-section-copyright .container .copyright-text {
     .what-we-do-section .container .left-container ul li {
         font-size: 40px;
     }
+
+    .what-we-do-section .container .left-container,
+    .what-we-do-section .container .right-container {
+        margin-top: 50px;
+        max-width: calc(100% - 200px);
+    }
+}
+
+
+@media only screen and (max-width: 1160px) {
+    .what-we-do-section .container {
+        flex-direction: column;
+        margin: unset;
+    }
+    
+    .what-we-do-section .container .right-container {
+        margin-top: 50px;
+    }
+
+    .what-we-do-section .container .right-container img {
+        max-width: 500px;
+    }
+}
+
+
+@media only screen and (max-width: 870px) {
+    .projects-section .container .card-container .three-grid-card,
+    .projects-section .container .card-container .two-grid-card {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .projects-section .container .card-container .card img {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
 }
