@@ -20,6 +20,16 @@
     justify-content: space-between;
 }
 
+.navigation-section nav .mobile-nav-menu-list-container {
+    display: none;
+}
+
+.navigation-section nav .nav-menu-list-container .hamburger-menu-icon {
+    display: none;
+    max-width: 32px;
+    cursor: pointer;
+}
+
 .home-header  .navigation-section  .nav-menu-list {
     display: flex;
     column-gap: 40px;
@@ -31,4 +41,64 @@
     font-size: fonts.$font-size-16px;
     line-height: fonts.$line-height-24px;
     font-weight: 500;
+}
+
+// Media queries
+// 1400px set nav container to 1180px
+// 1300px hamburger menu comes in
+
+@media only screen and (max-width: 1400px) {
+    .navigation-section .lg-container {
+        max-width: 1180px;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+    .navigation-section nav .nav-menu-list-container .hamburger-menu-icon {
+        display: block;
+    }
+
+    .home-header .navigation-section .nav-menu-list {
+        display: none;
+    }
+
+    .navigation-section nav .mobile-nav-menu-list-container {
+        // display: none;
+        position: fixed;
+        border: 1px red solid;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+
+        .nav-menu-list {
+            flex-direction: column;
+            row-gap: 32px;
+        }
+    }
+
+    .navigation-section nav .mobile-nav-menu-list-container .mobile-nav-menu-list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 32px;
+        li {
+            color: #4E3195;
+            font-size: 32px;
+            font-weight: 700;
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .navigation-section .lg-container {
+        max-width: 1080px;
+    }
+
+    .what-we-do-section .container .right-container img {
+        max-width: 400px;
+    }
 }

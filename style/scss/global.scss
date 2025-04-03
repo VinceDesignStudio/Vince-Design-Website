@@ -33,3 +33,30 @@ p {
     line-height: fonts.$line-height-32px;
     font-weight: 400;
 }
+
+
+@media only screen and (max-width: 1280px) {
+    .container {
+        max-width: 1080px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+
+    h1 {
+        line-height: 88px;
+        letter-spacing: fonts.$letter-spacing-2px-negative;
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 52px;
+        letter-spacing: fonts.$letter-spacing-1px-negative;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+}

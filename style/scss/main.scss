@@ -444,3 +444,15 @@ footer .footer-section-copyright .container .copyright-text {
 		transform: translateY(0px);
 	}
 }
+
+// Media queries
+@media only screen and (max-width: 1280px) {
+    .what-we-do-section .container .left-container ul,
+    .what-we-do-section .container .left-container button {
+        margin-top: 32px;
+    }
+
+    .what-we-do-section .container .left-container ul li {
+        font-size: 40px;
+    }
+}
