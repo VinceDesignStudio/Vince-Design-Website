@@ -1,6 +1,19 @@
 @use "fonts";
 @use "colors";
 
+.website-under-construction {
+    background-color: #eb7208;
+}
+
+.website-under-construction .container {
+    padding: 15px 0;
+}
+
+.website-under-construction .container p {
+    color: #ffffff;
+    text-align: center;
+}
+
 .home-hero-section .container  {
     padding-top: 160px;
 }
