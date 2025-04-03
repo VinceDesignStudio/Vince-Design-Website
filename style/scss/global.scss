@@ -64,3 +64,32 @@ p {
         font-weight: 400;
     }
 }
+
+
+@media only screen and (max-width: 870px) {
+    .container {
+        // max-width: 1080px;
+        max-width: calc(100% - 100px);
+    }
+
+    .lg-container {
+        max-width: calc(100% - 100px) !important;
+    }
+
+    h1 {
+        line-height: 88px;
+        letter-spacing: -2px;
+        font-size: 60px !important;
+    }
+
+    h2 {
+        font-size: 42px !important;
+        letter-spacing: fonts.$letter-spacing-1px-negative;
+    }
+
+    p {
+        font-size: 18px !important;
+        line-height: 28px;
+        font-weight: 400;
+    }
+}
