@@ -366,6 +366,11 @@ footer .footer-section .container {
     font-family: fonts.$ibm-plex-sans;
 }
 
+footer .footer-section .container .footer-about-company .footer-logo-wrapper img {
+    width: 32px;
+    height: 32px;
+}
+
 .footer-section .container .footer-about-company {
     p {
         margin-top: 8px;
