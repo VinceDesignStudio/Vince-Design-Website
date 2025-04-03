@@ -494,7 +494,23 @@ footer .footer-section-copyright .container .copyright-text {
 
     .projects-section .container .card-container .card img {
         width: 100%;
-        height: 80vh;
+        height: 70vh;
         object-fit: cover;
+    }
+
+    .contact-section .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: unset;
+    }
+    .contact-section .container .see-all-articles-btn {
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .projects-section .container .card-container .card img {
+        height: calc(100% - 40vh);
     }
 }

@@ -50,16 +50,16 @@ p {
     h1 {
         line-height: 88px;
         letter-spacing: fonts.$letter-spacing-2px-negative;
-        font-size: 80px;
+        font-size: 80px !important;
     }
 
     h2 {
-        font-size: 52px;
+        font-size: 52px !important;
         letter-spacing: fonts.$letter-spacing-1px-negative;
     }
 
     p {
-        font-size: 20px;
+        font-size: 20px !important;
         line-height: 28px;
         font-weight: 400;
     }
