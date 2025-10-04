@@ -195,7 +195,7 @@
    color: colors.$white;
    position: relative;
    cursor: pointer;
-   transition: 0.5s ease;
+   transition: 0.3s ease-out;
 
    .card-detail {
     display: none;
@@ -231,11 +231,21 @@
    video {
     object-fit: cover;
    }
-   
+}
+
+.projects-section .container .card-container .card:hover img {
+    scale: 1.1;
+    // transition: transform .3s ease-in-out;
+    transition: 0.3s ease-out;
+}
+
+.projects-section .container .card-container .card:hover {
+    overflow: hidden;
 }
 
 .projects-section .container .card-container .card:hover .card-detail {
     display: block;
+    transition: 0.3s ease-out;
 }
 
 .projects-section .container .see-all-projects-btn {
