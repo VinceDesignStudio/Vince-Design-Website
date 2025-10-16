@@ -1,0 +1,46 @@
+@use "fonts";
+@use "colors";
+
+.case-study-header {
+    height: unset;
+    // background-color: #999;
+    background-image: unset;
+    background: linear-gradient(135deg, #121b26, #4f46e5);
+}
+
+.case-study-header .home-hero-section .container {
+    padding-top: unset;
+}
+
+
+.case-study-header .home-hero-section {
+    padding: 80px;
+}
+
+.case-study-header .home-hero-section .container h1 {
+    line-height: 150%;
+    font-size: 52px;
+    text-align: center;
+}
+
+.case-study-text .container h3 {
+    line-height: 150%;
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.case-study-text .container p {
+    line-height: 150%;
+    margin-top: 24px;
+    font-family: fonts.$ibm-plex-sans;
+}
+
+.case-study-text .container img {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.case-study-text .max-1k {
+    max-width: 1000px;
+}

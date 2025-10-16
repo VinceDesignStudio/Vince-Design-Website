@@ -131,7 +131,7 @@
     color: colors.$white;
     font-weight: 500;
     background-color: colors.$royal-blue;
-    padding: 16px 24px;
+    padding: 20px 32px;
     border-radius: 4px;
     line-height: fonts.$line-height-8px;
     border: 1px colors.$royal-blue solid;
@@ -499,6 +499,14 @@ footer .footer-section-copyright .container .copyright-text {
 	100% {
 		transform: translateY(0px);
 	}
+}
+
+.customer-testimonials-section {
+    background-color: colors.$white;
+}
+
+.customer-testimonials-section .container {
+    padding: 80px 0;
 }
 
 // Media queries
