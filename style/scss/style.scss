@@ -1,12 +1,14 @@
 // Global styles
 @use "_css-reset";
 @use "global";
+@use "cookie-banner";
 
 // Home page styles
 @use "_navigation";
 @use "main";
 
 @use "case-study";
+
 
 
 

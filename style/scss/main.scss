@@ -64,6 +64,7 @@
     width: 100%;
     top: 0;
     background-color: #493193;
+    border: 1px #493193 solid;
     z-index: 9723672;
     padding: 24px 0 !important;
     animation: smoothScroll .5s forwards;
@@ -73,8 +74,7 @@
 // What We Do Section
 .what-we-do-section {
     background-color: colors.$white;
-    padding-top: 104px;
-    padding-bottom: 104px;
+    padding: 80px 0;
 }
 
 .what-we-do-section .container {
@@ -117,7 +117,7 @@
 
 .what-we-do-section .container .left-container ul li {
     font-family: fonts.$libre-baskerville;
-    font-size: fonts.$font-size-44px;
+    font-size: fonts.$font-size-40px;
     line-height: fonts.$line-height-60px;
     letter-spacing: fonts.$letter-spacing-1px-negative;
     color: colors.$cornflower-blue;
@@ -156,10 +156,11 @@
 // Project section
 .projects-section {
     background-color: #DFE0E2;
+    border: 1px #dfe0e2 solid;
 }
 
 .projects-section .container {
-    padding: 104px 0;
+    padding: 80px 0;
 }
 
 .projects-section .container .section-title {
@@ -192,7 +193,7 @@
 }
 
 .projects-section .container .card-container .three-grid-card {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .projects-section .container .card-container .card {
@@ -200,6 +201,8 @@
    position: relative;
    cursor: pointer;
    transition: 0.3s ease-out;
+   border-radius: 8px;
+   height: 100%;
 
    .card-detail {
     display: none;
@@ -219,7 +222,7 @@
 
    h2 {
     font-family: fonts.$libre-baskerville;
-    font-size: fonts.$font-size-40px;
+    font-size: fonts.$font-size-32px;
     line-height: fonts.$line-height-48px;
     letter-spacing: fonts.$letter-spacing-1px-negative;
    }
@@ -245,6 +248,7 @@
 
 .projects-section .container .card-container .card:hover {
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .projects-section .container .card-container .card:hover .card-detail {
@@ -261,6 +265,7 @@
     font-family: fonts.$ibm-plex-sans;
     color: colors.$white;
     background-color: colors.$royal-blue;
+    border: 1px colors.$royal-blue solid;
     padding: 16px 20px;
     border-radius: 4px;
     text-decoration: none;
@@ -269,8 +274,8 @@
     width: fit-content;
     &:hover {
         transition: 0.3s ease-out;
-        background-color: #000000;
-        border: 1px #ffffff solid;
+        background-color: colors.$black;
+        border: 1px colors.$black solid;
         color: #ffffff;
     }
    }
@@ -372,7 +377,7 @@
 }
 
 .contact-section .container {
-    padding: 104px 0;
+    padding: 80px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -509,8 +514,29 @@ footer .footer-section-copyright .container .copyright-text {
     background-color: colors.$white;
 }
 
+.customer-testimonials-section .container .review-image {
+    margin-top: 44px;
+}
+
 .customer-testimonials-section .container {
     padding: 80px 0;
+}
+
+.customer-testimonials-section .container .testimonial-author {
+    margin-top: 44px;
+    font-family: "IBM Plex Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.customer-testimonials-section .container .testimonial-message {
+        margin-top: 16px;
+        font-size: 28px;
+        line-height: 150%;
+        font-family: "IBM Plex Sans", sans-serif;
+}
+
+.customer-testimonials-section .container .section-title {
+    font-family: fonts.$libre-baskerville;
 }
 
 // Media queries
@@ -544,6 +570,7 @@ footer .footer-section-copyright .container .copyright-text {
 
     .what-we-do-section .container .right-container img {
         max-width: 500px;
+        width: 100%;
     }
 }
 
@@ -575,5 +602,35 @@ footer .footer-section-copyright .container .copyright-text {
 @media only screen and (max-width: 650px) {
     .projects-section .container .card-container .card img {
         height: calc(100% - 40vh);
+    }
+
+    .home-hero-section .container {
+        padding: 80px 0;
+    }
+
+    .what-we-do-section .container {
+        margin: auto;
+    }
+
+    .what-we-do-section .container .right-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .what-we-do-section .container .right-container .stage-image {
+        display: none;
+    }
+
+    .home-header {
+        height: unset;
+    }
+
+    .what-we-do-section, .projects-section .container {
+        padding: 80px 0;
+    }
+
+    .what-we-do-section .container .left-container {
+        max-width: 100%;
+        width: 100%;
     }
 }
