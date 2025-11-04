@@ -117,7 +117,7 @@
 
 .what-we-do-section .container .left-container ul li {
     font-family: fonts.$libre-baskerville;
-    font-size: fonts.$font-size-50px;
+    font-size: fonts.$font-size-44px;
     line-height: fonts.$line-height-60px;
     letter-spacing: fonts.$letter-spacing-1px-negative;
     color: colors.$cornflower-blue;
@@ -154,12 +154,16 @@
 
 
 // Project section
+.projects-section {
+    background-color: #DFE0E2;
+}
+
 .projects-section .container {
     padding: 104px 0;
 }
 
 .projects-section .container .section-title {
-    color: colors.$white;
+    color: colors.$black;
     font-weight: 400;
     line-height: fonts.$line-height-72px;
     letter-spacing: fonts.$letter-spacing-1px-negative;
@@ -167,7 +171,7 @@
     font-size: fonts.$font-size-67px;
 }
 .projects-section .container .section-description {
-    color: colors.$white;
+    color: colors.$black;
     margin-top: 12px;
     font-family: fonts.$ibm-plex-sans;
     font-size: fonts.$font-size-20px;
