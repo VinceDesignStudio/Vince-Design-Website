@@ -1,6 +1,8 @@
 @use "fonts";
 @use "colors";
 
+
+
 .website-under-construction {
     background-color: #eb7208;
 }
@@ -19,7 +21,7 @@
 }
 
 .home-hero-section .container h1 {
-    font-family: fonts.$libre-baskerville;
+    font-family: fonts.$silk-serif;
     color: colors.$white;
     span {
         font-style: italic;
@@ -93,7 +95,7 @@
 }
 
 .what-we-do-section .container .left-container h2 {
-    font-family: fonts.$libre-baskerville;
+    font-family: fonts.$silk-serif;
     font-size: fonts.$font-size-67px;
     font-weight: 400;
     line-height: fonts.$line-height-72px;
@@ -112,13 +114,13 @@
 }
 
 .what-we-do-section .container .left-container ul {
-    margin-top: 40px;
+    margin-top: 32px;
 }
 
 .what-we-do-section .container .left-container ul li {
-    font-family: fonts.$libre-baskerville;
+    font-family: fonts.$silk-serif;
     font-size: fonts.$font-size-40px;
-    line-height: fonts.$line-height-60px;
+    line-height: fonts.$line-height-52px;
     letter-spacing: fonts.$letter-spacing-1px-negative;
     color: colors.$cornflower-blue;
     font-weight: 400;
@@ -168,7 +170,7 @@
     font-weight: 400;
     line-height: fonts.$line-height-72px;
     letter-spacing: fonts.$letter-spacing-1px-negative;
-    font-family: fonts.$libre-baskerville;
+    font-family: fonts.$silk-serif;
     font-size: fonts.$font-size-67px;
 }
 .projects-section .container .section-description {
@@ -221,7 +223,7 @@
    }
 
    h2 {
-    font-family: fonts.$libre-baskerville;
+    font-family: fonts.$silk-serif;
     font-size: fonts.$font-size-32px;
     line-height: fonts.$line-height-48px;
     letter-spacing: fonts.$letter-spacing-1px-negative;
@@ -299,7 +301,7 @@
     font-size: fonts.$font-size-67px;
     line-height: fonts.$line-height-72px;
     letter-spacing: fonts.$letter-spacing-1px-negative;
-    font-family: fonts.$libre-baskerville;
+    font-family: fonts.$silk-serif;
     color: colors.$cornflower-blue;
 }
 
@@ -338,7 +340,7 @@
     line-height: fonts.$line-height-44px;
     letter-spacing: fonts.$letter-spacing-1px-negative;
     margin-top: 8px;
-    font-family: fonts.$libre-baskerville;
+    font-family: fonts.$silk-serif;
     color: colors.$cornflower-blue;
 }
 
@@ -530,13 +532,13 @@ footer .footer-section-copyright .container .copyright-text {
 
 .customer-testimonials-section .container .testimonial-message {
         margin-top: 16px;
-        font-size: 28px;
+        font-size: 40px;
         line-height: 150%;
         font-family: "IBM Plex Sans", sans-serif;
 }
 
 .customer-testimonials-section .container .section-title {
-    font-family: fonts.$libre-baskerville;
+    font-family: fonts.$silk-serif;
 }
 
 // Media queries
