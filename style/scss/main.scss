@@ -120,7 +120,7 @@
 .what-we-do-section .container .left-container ul li {
     font-family: fonts.$silk-serif;
     font-size: fonts.$font-size-40px;
-    line-height: fonts.$line-height-52px;
+    line-height: fonts.$line-height-60px;
     letter-spacing: fonts.$letter-spacing-1px-negative;
     color: colors.$cornflower-blue;
     font-weight: 400;
@@ -157,8 +157,11 @@
 
 // Project section
 .projects-section {
-    background-color: #DFE0E2;
-    border: 1px #dfe0e2 solid;
+    // background-color: #DFE0E2;
+    // border: 1px #dfe0e2 solid;
+
+    background-color: #f1f1f3;
+    border: 1px #f1f1f3 solid;
 }
 
 .projects-section .container {
@@ -386,6 +389,10 @@
     column-gap: 40px;
 }
 
+.contact-section .container .section-title {
+    font-family: fonts.$silk-serif;
+}
+
 .contact-section .container p {
     font-family: fonts.$ibm-plex-sans;
     margin-top: 16px;
@@ -528,6 +535,7 @@ footer .footer-section-copyright .container .copyright-text {
     margin-top: 44px;
     font-family: "IBM Plex Sans", sans-serif;
     text-transform: uppercase;
+    font-size: fonts.$font-size-16px;
 }
 
 .customer-testimonials-section .container .testimonial-message {
