@@ -44,3 +44,42 @@ document.addEventListener("DOMContentLoaded", ()=>{
     necessary_cookies_consent_btn.addEventListener("click", necessary_cookies_consent);
     accept_all_cookies_consent_btn.addEventListener("click", accept_all_cookies_consent);
 })
+
+
+// Faq section
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) => {
+  const trigger = faq.querySelector(".title-dropdown-wrapper");
+
+  const closedIcon = faq.querySelector(".faq-closed-icon");
+  const expandedIcon = faq.querySelector(".faq-expanded-icon");
+
+  trigger.addEventListener("click", () => {
+
+    faqs.forEach((item) => {
+      if (item !== faq) {
+        item.classList.remove("active");
+
+        const otherClosed =
+          item.querySelector(".faq-closed-icon");
+
+        const otherExpanded =
+          item.querySelector(".faq-expanded-icon");
+
+        otherClosed.style.display = "block";
+        otherExpanded.style.display = "none";
+      }
+    });
+
+    faq.classList.toggle("active");
+
+    if (faq.classList.contains("active")) {
+      closedIcon.style.display = "none";
+      expandedIcon.style.display = "block";
+    } else {
+      closedIcon.style.display = "block";
+      expandedIcon.style.display = "none";
+    }
+  });
+});

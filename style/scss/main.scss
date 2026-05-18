@@ -281,7 +281,7 @@
         transition: 0.3s ease-out;
         background-color: colors.$black;
         border: 1px colors.$black solid;
-        color: #ffffff;
+        color: colors.$white;
     }
    }
 
@@ -431,12 +431,94 @@
     padding: 80px 0;
 }
 
+.faq-section .container .wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 80px;
+    margin-top: 52px;
+}
+
+.faq-section .container .section-cta {
+        display: block;
+    margin-top: 40px;
+    color: colors.$white;
+    background-color: colors.$royal-blue;
+    border: 1px colors.$royal-blue solid;
+    padding: 16px 20px;
+    border-radius: 4px;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: fonts.$ibm-plex-sans;
+    line-height: 28px;
+    letter-spacing: -1;
+}
 .faq-section .container .section-title{
     color: colors.$white;
     font-family: fonts.$silk-serif;
     max-width: 950px;
 }
 
+.faq-section .container .section-description {
+    color: colors.$white;
+}
+
+.faq-section .container  .section-cta-wrapper {
+    flex: 1;
+}
+
+.faq-section .container .faq-wrapper {
+    color: #ffffff;
+    flex: 0.9;
+}
+
+.faq-section .container .faq-wrapper .faq {
+    border-bottom: 1px #2c2c2c solid;
+    padding: 24px 0;
+}
+
+.faq-section .container .faq-wrapper .faq .content {
+    display: none;
+}
+
+.faq-section .container .faq-wrapper .faq .faq-expanded-icon {
+    display: none;
+}
+
+.faq-section .container .faq-wrapper .active .content {
+    display: block;
+    margin-top: 32px;
+}
+
+.faq-section .container .faq-wrapper p {
+    margin-top: 24px;
+    line-height: 150%;
+}
+
+.faq-section .container .faq-wrapper .title-dropdown-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.faq-section .container .faq-wrapper .title-dropdown-wrapper h3 {
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 400;
+    // padding: 24px 0;
+}
+
+.faq-section .container .dropdown img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-section {
+    border-top: 1px #2c2c2c solid;
+}
 
 
 footer .footer-section .container {
@@ -593,6 +675,15 @@ footer .footer-section-copyright .container .copyright-text {
 
     .what-we-do-section .container .right-container img {
         max-width: 500px;
+        width: 100%;
+    }
+
+    .faq-section .container .wrapper {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .faq-section .container .faq-wrapper {
         width: 100%;
     }
 }
